@@ -48,10 +48,7 @@ We'll need to make sure that everything is set up before we begin working on the
 
 Users will need to register for a new account. Create a link on the home page
 that will take them to a page where they can enter their desired username and
-password. There are a two constraints to this feature:
-
-1. The username must be unique
-1. The password must be at least 6 characters long
+password. The username must be unique.
 
 If both constraints are met, the user should be considered logged in and
 redirected to the home page where all references to "Register" are removed.
