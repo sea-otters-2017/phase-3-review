@@ -12,17 +12,28 @@ We won't run the tests from the command line.  Instead we'll run them in the bro
 
 ## Releases
 ### Release 0: Student
-We'll start by focusing on the tests describing our student (see `spec/student_spec.js`).  To run the tests, open the file `SpecRunner.html` in a browser. On the command line navigate to the `part-1` directory and then run ...
+
+We'll start by focusing on the tests describing our student (see
+`spec/student_spec.js`).  To run the tests, open the file `SpecRunner.html` in
+a browser. On the command line navigate to the `part-1` directory and then run
+...
 
 ```
 $ open SpecRunner.html
 ```
 ... this should open the HTML file in the default browser.
 
-When the page loads, the tests will run—to begin, all of them will be failing.  Writing code in the file `student.js`, work through the tests until all of the tests for the student pass.
+When the page loads, the tests will run—to begin, all of them will be failing.
+Writing code in the file `student.js`, work through the tests until all of the
+tests for the student pass.
 
 ### Release 1: Classroom
-Once the tests for the custom student object pass, move on to the classroom object type.  Write the code for the custom classroom object in the file `classroom.js`.  Work through the tests until all of the tests pass.
+
+Once the tests for the custom student object pass, move on to the classroom
+object type.  Write the code for the custom classroom object in the file
+`classroom.js`.  Work through the tests until all of the tests pass.
 
 ## Conclusion
-Once all the tests have passed, you have completed Part 1 of the assessment. If you haven't done so already, commit your changes and move on to Part 2.
+
+Once all the tests have passed, you have completed Part 1 of the assessment. If
+you haven't done so already, commit your changes and move on to Part 2.
