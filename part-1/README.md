@@ -49,8 +49,35 @@ Once all the tests are passing, you're done!
 ### Release 1: Classroom
 
 Once the tests for the custom student object pass, move on to the classroom
-object type.  Write the code for the custom classroom object in the file
-`classroom.js`.  Work through the tests until all of the tests pass.
+object type.  Just as above, start by fixing the first test in
+`spec/classroom_spec.js`. To make the test in `spec/classroom_spec.js` pass you
+will make edits to `classroom.js`. Continue onward by fixing the remaining
+tests.
+
+
+You are also provided an English-language version of the tests here.
+
+#### Context
+
+Assume that four `Student`s are created. A new instance of `Classroom` is
+initialized with an Array of these `Student`s.  You may assume this
+initialization happens before each test.
+
+
+You are also provided an English-language version of the tests here.
+
+#### Context
+
+Assume we create an instance of `Student` that is initialized with a first name
+and an `Array` of numbers representing their grades. You may assume this
+happens before each test.
+
+#### Tests
+
+* The result of creating a new `Classroom` instance is an object of type `Classroom`
+* The new instances `students` Array has the same scores as the scores that were passed in during initialization
+* The new instance's method `find` searches through the `students` array to find the one whose first name matches
+* The new instance's method `honorRollStudents` searches through the `students` array to find the one whose average score is 95 or greater
 
 ## Conclusion
 
