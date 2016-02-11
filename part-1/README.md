@@ -23,9 +23,12 @@ $ open SpecRunner.html
 ```
 ... this should open the HTML file in the default browser.
 
-When the page loads, the tests will run—to begin, all of them will be failing.
-Writing code in the file `student.js`, work through the tests until all of the
-tests for the student pass.
+When the page loads, the tests in `spec/student_spec.js` will run. All of them
+will be failing.  Start by fixing the first test in `spec/student_spec.js`. To
+make the test in `spec/student_spec.js` pass you will make edits to
+`student.js`. Continue onward by fixing the remaining tests.
+
+Once all the tests are passing, you're done!
 
 ### Release 1: Classroom
 
