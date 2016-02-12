@@ -40,7 +40,7 @@ happens before each test.
 
 * The result of creating a new `Student` instance is an object of type `Student`
 * The new instance's first name matches the one that was passed in during initialization
-* The new instances `scores` Array has the same scores as the scores that were passed in during initialization
+* The new instance's `scores` Array has the same scores as the scores that were passed in during initialization
 * The new instance can return an average score value that is computed based on the content of the scores that were passed in during initialization
 * The new instance can return a letter grade that is based on interpreting the average score value
 
@@ -75,7 +75,7 @@ happens before each test.
 #### Tests
 
 * The result of creating a new `Classroom` instance is an object of type `Classroom`
-* The new instances `students` Array has the same scores as the scores that were passed in during initialization
+* The new instance's `students` Array has the same scores as the scores that were passed in during initialization
 * The new instance's method `find` searches through the `students` array to find the one whose first name matches
 * The new instance's method `honorRollStudents` searches through the `students` array to find the one whose average score is 95 or greater
 
