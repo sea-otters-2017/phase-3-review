@@ -12,17 +12,76 @@ We won't run the tests from the command line.  Instead we'll run them in the bro
 
 ## Releases
 ### Release 0: Student
-We'll start by focusing on the tests describing our student (see `spec/student_spec.js`).  To run the tests, open the file `SpecRunner.html` in a browser. On the command line navigate to the `part-1` directory and then run ...
+
+We'll start by focusing on the tests describing our student (see
+`spec/student_spec.js`).  To run the tests, open the file `SpecRunner.html` in
+a browser. On the command line navigate to the `part-1` directory and then run
+...
 
 ```
 $ open SpecRunner.html
 ```
 ... this should open the HTML file in the default browser.
 
-When the page loads, the tests will run—to begin, all of them will be failing.  Writing code in the file `student.js`, work through the tests until all of the tests for the student pass.
+When the page loads, the tests in `spec/student_spec.js` will run. All of them
+will be failing.  Start by fixing the first test in `spec/student_spec.js`. To
+make the test in `spec/student_spec.js` pass you will make edits to
+`student.js`. Continue onward by fixing the remaining tests.
+
+You are also provided an English-language version of the tests below. We
+recommend you carefully read the spec files and English-language requirements
+to determine the code you need to write.
+
+#### Context
+
+Assume we create an instance of `Student` that is initialized with a first name
+and an `Array` of numbers representing their grades. You may assume this
+happens before each test.
+
+#### Tests
+
+* The result of creating a new `Student` instance is an object of type `Student`
+* The new instance's first name matches the one that was passed in during initialization
+* The new instance's `scores` Array has the same scores as the scores that were passed in during initialization
+* The new instance can return an average score value that is computed based on the content of the scores that were passed in during initialization
+* The new instance can return a letter grade that is based on interpreting the average score value
+
+Once all the tests are passing, you're done!
 
 ### Release 1: Classroom
-Once the tests for the custom student object pass, move on to the classroom object type.  Write the code for the custom classroom object in the file `classroom.js`.  Work through the tests until all of the tests pass.
+
+Once the tests for the custom student object pass, move on to the classroom
+object type.  Just as above, start by fixing the first test in
+`spec/classroom_spec.js`. To make the test in `spec/classroom_spec.js` pass you
+will make edits to `classroom.js`. Continue onward by fixing the remaining
+tests.
+
+
+You are also provided an English-language version of the tests below:
+
+#### Context
+
+Assume that four `Student`s are created. A new instance of `Classroom` is
+initialized with an Array of these `Student`s.  You may assume this
+initialization happens before each test.
+
+
+You are also provided an English-language version of the tests below:
+
+#### Context
+
+Assume we create an instance of `Student` that is initialized with a first name
+and an `Array` of numbers representing their grades. You may assume this
+happens before each test.
+
+#### Tests
+
+* The result of creating a new `Classroom` instance is an object of type `Classroom`
+* The new instance's `students` Array has the same scores as the scores that were passed in during initialization
+* The new instance's method `find` searches through the `students` array to find the one whose first name matches
+* The new instance's method `honorRollStudents` searches through the `students` array to find the one whose average score is 95 or greater
 
 ## Conclusion
-Once all the tests have passed, you have completed Part 1 of the assessment. If you haven't done so already, commit your changes and move on to Part 2.
+
+Once all the tests have passed, you have completed Part 1 of the assessment. If
+you haven't done so already, commit your changes and move on to Part 2.
