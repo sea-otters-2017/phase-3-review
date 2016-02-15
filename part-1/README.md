@@ -28,7 +28,7 @@ will be failing.  Start by fixing the first test in `spec/student_spec.js`. To
 make the test in `spec/student_spec.js` pass you will make edits to
 `student.js`. Continue onward by fixing the remaining tests.
 
-You are also provided an English-language version of the tests here.
+You are also provided an English-language version of the tests below:
 
 #### Context
 
@@ -55,7 +55,7 @@ will make edits to `classroom.js`. Continue onward by fixing the remaining
 tests.
 
 
-You are also provided an English-language version of the tests here.
+You are also provided an English-language version of the tests below:
 
 #### Context
 
@@ -64,7 +64,7 @@ initialized with an Array of these `Student`s.  You may assume this
 initialization happens before each test.
 
 
-You are also provided an English-language version of the tests here.
+You are also provided an English-language version of the tests below:
 
 #### Context
 
