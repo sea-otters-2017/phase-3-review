@@ -28,7 +28,9 @@ will be failing.  Start by fixing the first test in `spec/student_spec.js`. To
 make the test in `spec/student_spec.js` pass you will make edits to
 `student.js`. Continue onward by fixing the remaining tests.
 
-You are also provided an English-language version of the tests below:
+You are also provided an English-language version of the tests below. We
+recommend you carefully read the spec files and English-language requirements
+to determine the code you need to write.
 
 #### Context
 
