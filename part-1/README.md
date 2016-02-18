@@ -40,7 +40,6 @@ happens before each test.
 
 #### Tests
 
-* The result of creating a new `Student` instance is an object of type `Student`
 * The new instance's first name matches the one that was passed in during initialization
 * The new instance's `scores` Array has the same scores as the scores that were passed in during initialization
 * The new instance can return an average score value that is computed based on the content of the scores that were passed in during initialization
