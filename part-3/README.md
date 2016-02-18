@@ -127,7 +127,8 @@ _Given:_
 
 1. On the profile page, create an edit link associated to each of the items the
    user has created. This link should only be visible if the user logged in is the
-   user that created the item.
+   user that created the item. For example, if Eve is visiting Bob's profile, she
+   should not be able to edit Bob's items.
 1. When the user clicks the edit link associated to the item, they should be
    taken to a page to edit that item's details. After submitting this information
    the user should be taken back to their profile page and see the item's updates
