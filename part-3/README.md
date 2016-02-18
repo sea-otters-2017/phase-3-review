@@ -141,10 +141,10 @@ _Given_
 * There exist previously-created items; some owned by the logged-in user,
   others not
 
-1. On the profile page, create a delete link associated to each of the items
-   the user has created. Just like in the update section, this link should only be
+1. On the profile page, create a delete button associated to each of the items
+   the user has created. Just like in the update section, this button should only be
    visible if the user logged in is the user that created the item.
-1. When the user clicks the delete link, the user profile page should reload and
+1. When the user clicks the delete button, the user profile page should reload and
    the item should no longer be visible.
 
 ### Release 3: Bidding
