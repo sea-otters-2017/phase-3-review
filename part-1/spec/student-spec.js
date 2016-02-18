@@ -5,12 +5,6 @@ describe("Student", function(){
     student = new Student("Lysette", [100, 100, 100, 4, 100]);
   });
 
-  describe("type", function() {
-    it("is a student object", function() {
-      expect(student).toEqual(jasmine.any(Student));
-    });
-  });
-
   describe("name", function() {
     it("has a first name", function() {
       expect(student.firstName).toEqual("Lysette");
