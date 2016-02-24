@@ -35,12 +35,6 @@ describe("Classroom", function() {
     classroom = new Classroom([jalil, irene, kelvin, myra]);
   });
 
-  describe("type", function() {
-    it("is a classroom object", function() {
-      expect(classroom).toEqual(jasmine.any(Classroom));
-    });
-  });
-
   describe("students", function() {
     it("has students", function() {
       expect(classroom.students).toEqual([jalil, irene, kelvin, myra]);
