@@ -75,7 +75,6 @@ happens before each test.
 
 #### Tests
 
-* The result of creating a new `Classroom` instance is an object of type `Classroom`
 * The new instance's `students` Array has the same scores as the scores that were passed in during initialization
 * The new instance's method `find` searches through the `students` array to find the one whose first name matches
 * The new instance's method `honorRollStudents` searches through the `students` array to find the one whose average score is 95 or greater
