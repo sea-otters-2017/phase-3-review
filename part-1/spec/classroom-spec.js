@@ -2,35 +2,14 @@ describe("Classroom", function() {
   var classroom, jalil, irene, kelvin, myra;
 
   beforeEach(function() {
-    // Define mock student objects
-    jalil = {
-      firstName: "Jalil",
-      scores: [100, 100],
-      averageScore: function() { return 100; },
-      letterGrade: function() { return "A"; },
-    }
+    // Define student objects
+    jalil = new Student("Jalil", [100, 100]);
 
-    irene = {
-      firstName: "Irene",
-      scores: [95, 95],
-      averageScore: function() { return 95; },
-      letterGrade: function() { return "A"; },
-    };
+    irene = new Student("Irene", [95, 95]);
 
-    kelvin = {
-      firstName: "Kelvin",
-      scores: [94, 94],
-      averageScore: function() { return 94; },
-      letterGrade: function() { return "A"; },
-    };
+    kelvin = new Student("Kelvin", [94, 94]);
 
-    myra = {
-      firstName: "Myra",
-      scores: [70, 70],
-      averageScore: function() { return 70; },
-      letterGrade: function() { return "C"; },
-    };
-
+    myra = new Student("Myra", [70, 70]);
     // Assign classroom
     classroom = new Classroom([jalil, irene, kelvin, myra]);
   });
