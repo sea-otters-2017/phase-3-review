@@ -30,7 +30,8 @@ Feature tests are provided in Part 2 of the assessment to guide our enhancement 
 ### Pre-release:  Setup
 We'll need to make sure that everything is set up before we begin working on the application.  From the command line, navigate to the `part-2` directory of the phase 2 assessment.  Once there, run ...
 
-0. `$ brew update && brew install phantomjs`
+0. `$ brew update && brew unlink phantomjs && brew install phantomjs`
+0.  Ensure the installation worked. If not **ask for help**. Executing `phantomjs -v` should return a version number greater than 2.1 (e.g. 2.1.0, 2.1.1, 2.2, 2.3, etc.)
 0. `$ bundle`
 0. `$ bundle exec rake db:create`
 0. `$ bundle exec rake db:migrate`
