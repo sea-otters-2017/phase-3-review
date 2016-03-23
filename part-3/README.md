@@ -50,11 +50,17 @@ Users will need to register for a new account. Create a link on the home page
 that will take them to a page where they can enter their desired username and
 password. The username must be unique.
 
+![registration home](../part-3/mockups/register.png)
+
 If both constraints are met, the user should be considered logged in and
 redirected to the home page where all references to "Register" are removed.
 
+![registration home](../part-3/mockups/homepage%20logged%20in.png)
+
 If either constraint is not met, the user should see the registration form and
 the associated error messages.
+
+![registration home](../part-3/mockups/register%20error.png)
 
 ### Release 1: Login/Logout
 
