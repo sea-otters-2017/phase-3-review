@@ -107,9 +107,14 @@ _Given:_
 
 1. On the home page create a link to the user's profile page.
 1. When the user clicks on the profile link they should be taken to their profile page.
+
+![profile 1](../part-3/mockups/profile%201.png)
+
 1. Create a link on this page to add an item to the auction site. The item
    should include things like a name and/or title, description, when the user
    would like the auction to start and when it should stop.
+
+![add auction error](../part-3/mockups/add%20auction%20error.png)
 
 *Note*: When creating and or editing an item, you'll need to create forms that
 allow you to enter dates. The HTML5 datetime input type is tricky to use with
@@ -129,6 +134,8 @@ _Given:_
 1. Create a section on the profile page to display all the items. This section
    should _not_ include the long form description of the item.
 
+![add auction error](../part-3/mockups/profile%202.png)
+
 #### Updating Items
 
 _Given:_
@@ -145,6 +152,8 @@ _Given:_
    taken to a page to edit that item's details. After submitting this information
    the user should be taken back to their profile page and see the item's updates
    should be reflected on the page.
+
+![add auction error](../part-3/mockups/edit%20auction.png)
 
 #### Deleting Items
 
