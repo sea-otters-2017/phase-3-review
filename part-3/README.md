@@ -225,7 +225,7 @@ In place of the bidding form, a user should see the text "To place a bid please
 -login or register." Both login and register should be links taking the user to
 their respective pages.
 
-![place bids](../part-3/mockups/bid%20on%20item%20already%20bid%20copy.png)
+![place bids](../part-3/mockups/bid%20on%20item%20logged%20out.png)
 
 ### Release 4: Bid on Items on the Profile Page
 
