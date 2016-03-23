@@ -202,11 +202,17 @@ _Given_
 user clicks on a link for an item, they should be on a page that is displaying
 the details of the item. This will include the long form description and add a
 section on the page to display the current number of bidders.
+
 1. Add a form to the item detail page that will allow the user to enter a bid
 amount. The submit button for the form should say "Place Bid".
+
+![place bids](../part-3/mockups/bid%20on%20item.png)
+
 1. When the user submits the bidding form, the page should reload. Where the
 form was located, there should be the text "Thank you for your bid. Good luck!"
 and the number of bidders section should be incremented by 1.
+
+
 
 #### Login or Register to Bid
 
