@@ -226,8 +226,6 @@ their respective pages.
 
 ![place bids](../part-3/mockups/bid%20on%20item%20already%20bid%20copy.png)
 
-![place bids](../part-3/mockups/bid%20on%20item%20already%20bid.png)
-
 ### Release 4: Bid on Items on the Profile Page
 
 Now that we can bid on items, let's make it easy to keep track of the things we
@@ -243,6 +241,9 @@ _Given:_
 
 Create a section to display the items the user has bid on.
 
+![bid on items](../part-3/mockups/profile%203.png)
+
+
 #### Won Items
 
 _Given:_
@@ -254,6 +255,8 @@ _Given:_
 Create a section to display the items they have won. This is items that are no
 longer active (end date is before today) and the bid placed on the item is the
 highest of all the bidders.
+
+![bid on items](../part-3/mockups/profile%204.png)
 
 ## Conclusion
 
