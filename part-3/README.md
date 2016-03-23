@@ -74,8 +74,14 @@ _Given:_
 1. On the home page, create a link to login.
 1. When a user clicks on this link they should be taken to a page with a form to
    enter their credentials.
+
+![login home](../part-3/mockups/login.png)
+
 1. If the credentials match, the user should be taken back to the homepage and the
    login link should be replaced with a logout link.
+
+![login error](../part-3/mockups/login%20error.png)
+
 1. If the credentials do not match, the user should see the login form and an
    error message stating the credentials were not valid.
 
