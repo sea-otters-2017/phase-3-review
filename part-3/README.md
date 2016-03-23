@@ -204,15 +204,15 @@ the details of the item. This will include the long form description and add a
 section on the page to display the current number of bidders.
 
 1. Add a form to the item detail page that will allow the user to enter a bid
-amount. The submit button for the form should say "Place Bid".
+amount.
 
 ![place bids](../part-3/mockups/bid%20on%20item.png)
 
 1. When the user submits the bidding form, the page should reload. Where the
-form was located, there should be the text "Thank you for your bid. Good luck!"
+form was located, there should be the text thanking you for the bid.
 and the number of bidders section should be incremented by 1.
 
-
+![place bids](../part-3/mockups/bid%20on%20item%20already%20bid.png)
 
 #### Login or Register to Bid
 
@@ -221,9 +221,12 @@ _Given:_
 * The current user is not logged in
 * The user is on the item details page for a previously-created item
 
-In place of the bidding form, a user should see the text "To place a bid please
-login or register." Both login and register should be links taking the user to
+In place of the bidding form, a user should see the text "Login or Register to Bid." Both login and register should be links taking the user to
 their respective pages.
+
+![place bids](../part-3/mockups/bid%20on%20item%20already%20bid%20copy.png)
+
+![place bids](../part-3/mockups/bid%20on%20item%20already%20bid.png)
 
 ### Release 4: Bid on Items on the Profile Page
 
