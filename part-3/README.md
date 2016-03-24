@@ -44,6 +44,10 @@ We'll need to make sure that everything is set up before we begin working on the
 0. `$ bundle`
 0. `$ bundle exec rake db:create`
 
+_NOTE_: In the mockups below the URLs are omitted. You should determine the
+appropriate path(s) based on conventions / patterns you have learned about
+in Phase 2.
+
 ### Release 0: User Registration
 
 Users will need to register for a new account. Create a link on the home page
