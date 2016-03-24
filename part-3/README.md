@@ -59,12 +59,12 @@ password. The username must be unique.
 If both constraints are met, the user should be considered logged in and
 redirected to the home page where all references to "Register" are removed.
 
-![registration home](../part-3/mockups/homepage%20logged%20in.png)
+![registration home](../part-3/mockups/homepage_logged_in.png)
 
 If either constraint is not met, the user should see the registration form and
 the associated error messages.
 
-![registration home](../part-3/mockups/register%20error.png)
+![registration home](../part-3/mockups/register_error.png)
 
 ### Release 1: Login/Logout
 
@@ -84,7 +84,7 @@ _Given:_
 1. If the credentials match, the user should be taken back to the homepage and the
    login link should be replaced with a logout link.
 
-![login error](../part-3/mockups/login%20error.png)
+![login error](../part-3/mockups/login_error.png)
 
 1. If the credentials do not match, the user should see the login form and an
    error message stating the credentials were not valid.
@@ -112,13 +112,13 @@ _Given:_
 1. On the home page create a link to the user's profile page.
 1. When the user clicks on the profile link they should be taken to their profile page.
 
-![profile 1](../part-3/mockups/profile%201.png)
+![profile 1](../part-3/mockups/profile_1.png)
 
 1. Create a link on this page to add an item to the auction site. The item
    should include things like a name and/or title, description, when the user
    would like the auction to start and when it should stop.
 
-![add auction error](../part-3/mockups/add%20auction%20error.png)
+![add auction error](../part-3/mockups/add_auction_error.png)
 
 *Note*: When creating and or editing an item, you'll need to create forms that
 allow you to enter dates. The HTML5 datetime input type is tricky to use with
@@ -138,7 +138,7 @@ _Given:_
 1. Create a section on the profile page to display all the items. This section
    should _not_ include the long form description of the item.
 
-![add auction error](../part-3/mockups/profile%202.png)
+![add auction error](../part-3/mockups/profile_2.png)
 
 #### Updating Items
 
@@ -157,7 +157,7 @@ _Given:_
    the user should be taken back to their profile page and see the item's updates
    should be reflected on the page.
 
-![add auction error](../part-3/mockups/edit%20auction.png)
+![add auction error](../part-3/mockups/edit_auction.png)
 
 #### Deleting Items
 
@@ -210,13 +210,13 @@ section on the page to display the current number of bidders.
 1. Add a form to the item detail page that will allow the user to enter a bid
 amount. The submit button for the form should say "Place Bid".
 
-![place bids](../part-3/mockups/bid%20on%20item.png)
+![place bids](../part-3/mockups/bid_on_item.png)
 
 1. When the user submits the bidding form, the page should reload. Where the
 form was located, there should be the text, "Thank you for your bid. Good luck!"
 and the number of bidders section should be incremented by 1.
 
-![place bids](../part-3/mockups/bid%20on%20item%20already%20bid.png)
+![place bids](../part-3/mockups/bid_on_item_already_bid.png)
 
 #### Login or Register to Bid
 
@@ -229,7 +229,7 @@ In place of the bidding form, a user should see the text "To place a bid please
 -login or register." Both login and register should be links taking the user to
 their respective pages.
 
-![place bids](../part-3/mockups/bid%20on%20item%20logged%20out.png)
+![place bids](../part-3/mockups/bid_on_item_logged_out.png)
 
 ### Release 4: Bid on Items on the Profile Page
 
@@ -246,7 +246,7 @@ _Given:_
 
 Create a section to display the items the user has bid on.
 
-![bid on items](../part-3/mockups/profile%203.png)
+![bid on items](../part-3/mockups/profile_3.png)
 
 
 #### Won Items
@@ -261,7 +261,7 @@ Create a section to display the items they have won. This is items that are no
 longer active (end date is before today) and the bid placed on the item is the
 highest of all the bidders.
 
-![bid on items](../part-3/mockups/profile%204.png)
+![bid on items](../part-3/mockups/profile_4.png)
 
 ## Conclusion
 
