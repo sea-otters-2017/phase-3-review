@@ -225,8 +225,7 @@ _Given:_
 * The current user is not logged in
 * The user is on the item details page for a previously-created item
 
-In place of the bidding form, a user should see the text "To place a bid please
--login or register." Both login and register should be links taking the user to
+In place of the bidding form, a user should see the text "To place a bid please login or register." Both login and register should be links taking the user to
 their respective pages.
 
 ![place bids](../part-3/mockups/bid_on_item_logged_out.png)
