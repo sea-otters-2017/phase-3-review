@@ -44,17 +44,27 @@ We'll need to make sure that everything is set up before we begin working on the
 0. `$ bundle`
 0. `$ bundle exec rake db:create`
 
+_NOTE_: In the mockups below the URLs are omitted. You should determine the
+appropriate path(s) based on conventions / patterns you have learned about
+in Phase 2.
+
 ### Release 0: User Registration
 
 Users will need to register for a new account. Create a link on the home page
 that will take them to a page where they can enter their desired username and
 password. The username must be unique.
 
+![registration home](../part-3/mockups/register.png)
+
 If both constraints are met, the user should be considered logged in and
 redirected to the home page where all references to "Register" are removed.
 
+![registration home](../part-3/mockups/homepage_logged_in.png)
+
 If either constraint is not met, the user should see the registration form and
 the associated error messages.
+
+![registration home](../part-3/mockups/register_error.png)
 
 ### Release 1: Login/Logout
 
@@ -68,8 +78,14 @@ _Given:_
 1. On the home page, create a link to login.
 1. When a user clicks on this link they should be taken to a page with a form to
    enter their credentials.
+
+![login home](../part-3/mockups/login.png)
+
 1. If the credentials match, the user should be taken back to the homepage and the
    login link should be replaced with a logout link.
+
+![login error](../part-3/mockups/login_error.png)
+
 1. If the credentials do not match, the user should see the login form and an
    error message stating the credentials were not valid.
 
@@ -95,9 +111,14 @@ _Given:_
 
 1. On the home page create a link to the user's profile page.
 1. When the user clicks on the profile link they should be taken to their profile page.
+
+![profile 1](../part-3/mockups/profile_1.png)
+
 1. Create a link on this page to add an item to the auction site. The item
    should include things like a name and/or title, description, when the user
    would like the auction to start and when it should stop.
+
+![add auction error](../part-3/mockups/add_auction_error.png)
 
 *Note*: When creating and or editing an item, you'll need to create forms that
 allow you to enter dates. The HTML5 datetime input type is tricky to use with
@@ -117,6 +138,8 @@ _Given:_
 1. Create a section on the profile page to display all the items. This section
    should _not_ include the long form description of the item.
 
+![add auction error](../part-3/mockups/profile_2.png)
+
 #### Updating Items
 
 _Given:_
@@ -133,6 +156,8 @@ _Given:_
    taken to a page to edit that item's details. After submitting this information
    the user should be taken back to their profile page and see the item's updates
    should be reflected on the page.
+
+![add auction error](../part-3/mockups/edit_auction.png)
 
 #### Deleting Items
 
@@ -181,11 +206,17 @@ _Given_
 user clicks on a link for an item, they should be on a page that is displaying
 the details of the item. This will include the long form description and add a
 section on the page to display the current number of bidders.
+
 1. Add a form to the item detail page that will allow the user to enter a bid
 amount. The submit button for the form should say "Place Bid".
+
+![place bids](../part-3/mockups/bid_on_item.png)
+
 1. When the user submits the bidding form, the page should reload. Where the
-form was located, there should be the text "Thank you for your bid. Good luck!"
+form was located, there should be the text, "Thank you for your bid. Good luck!"
 and the number of bidders section should be incremented by 1.
+
+![place bids](../part-3/mockups/bid_on_item_already_bid.png)
 
 #### Login or Register to Bid
 
@@ -194,9 +225,10 @@ _Given:_
 * The current user is not logged in
 * The user is on the item details page for a previously-created item
 
-In place of the bidding form, a user should see the text "To place a bid please
-login or register." Both login and register should be links taking the user to
+In place of the bidding form, a user should see the text "To place a bid please login or register." Both login and register should be links taking the user to
 their respective pages.
+
+![place bids](../part-3/mockups/bid_on_item_logged_out.png)
 
 ### Release 4: Bid on Items on the Profile Page
 
@@ -213,6 +245,9 @@ _Given:_
 
 Create a section to display the items the user has bid on.
 
+![bid on items](../part-3/mockups/profile_3.png)
+
+
 #### Won Items
 
 _Given:_
@@ -224,6 +259,8 @@ _Given:_
 Create a section to display the items they have won. This is items that are no
 longer active (end date is before today) and the bid placed on the item is the
 highest of all the bidders.
+
+![bid on items](../part-3/mockups/profile_4.png)
 
 ## Conclusion
 
