@@ -1,7 +1,7 @@
 require_relative "../spec_helper"
 
 describe Post do
-  let(:valid_post_attributes) { {body: "This is what I have to say.", author_name: "Wanda", title: "My Thoughts on Testing"} }
+  let(:valid_post_attributes) { {body: "This is what I have to say.", hometown: "Oakland", guest_name: "John Locke"} }
   let(:post) { Post.new(valid_post_attributes) }
 
   describe "the body" do
@@ -16,40 +16,40 @@ describe Post do
     end
   end
 
-  describe "the title" do
+  describe "the guest name" do
     it "is required" do
-      no_title_attributes = valid_post_attributes.merge(title: nil)
-      titleless_post = Post.new(no_title_attributes)
-      expect(titleless_post).to_not be_valid
+      no_guest_name_attributes = valid_post_attributes.merge(guest_name: nil)
+      nameless_post = Post.new(no_guest_name_attributes)
+      expect(nameless_post).to_not be_valid
     end
 
     it "can be set" do
-      expect(post.title).to eq "My Thoughts on Testing"
+      expect(post.guest_name).to eq "John Locke"
     end
 
   end
 
-  describe "the author's name" do
-    it "defaults to anonymous if nil" do
-      no_author_attributes = valid_post_attributes.merge(author_name: nil)
-      authorless_post = Post.new(no_author_attributes)
-      expect(authorless_post.author_name).to eq "anonymous"
+  describe "the hometown" do
+    it "defaults to unknown if nil" do
+      no_hometown_attributes = valid_post_attributes.merge(hometown: nil)
+      townless_post = Post.new(no_hometown_attributes)
+      expect(townless_post.hometown).to eq "unknown"
     end
 
-    it "defaults to anonymous if empty" do
-      empty_author_attributes = valid_post_attributes.merge(author_name: "")
-      empty_author_post = Post.new(empty_author_attributes)
-      expect(empty_author_post.author_name).to eq "anonymous"
+    it "defaults to unknown if empty" do
+      empty_hometown_attributes = valid_post_attributes.merge(hometown: "")
+      empty_hometown_post = Post.new(empty_hometown_attributes)
+      expect(empty_hometown_post.hometown).to eq "unknown"
     end
 
-    it "defaults to anonymous if not given at all" do
-      no_author_key_attributes = {body: "Butterflies", title: "Thoughts on Animals"}
-      no_author_key_post = Post.new(no_author_key_attributes)
-      expect(no_author_key_post.author_name).to eq "anonymous"
+    it "defaults to unknown if not given at all" do
+      no_hometown_key_attributes = {body: "Loved it here.", guest_name: "Peter"}
+      no_hometown_key_post = Post.new(no_hometown_key_attributes)
+      expect(no_hometown_key_post.hometown).to eq "unknown"
     end
 
     it "can be set" do
-      expect(post.author_name).to eq "Wanda"
+      expect(post.hometown).to eq "Oakland"
     end
   end
 end
