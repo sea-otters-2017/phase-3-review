@@ -10,17 +10,23 @@ experience by adding some AJAX calls.
 
 #### Current Site
 
-The application is a simple hostel guestbook where guests at the hostel can post comments.  If a user wanted to post a comment, here's the process.
+The application is a simple guestbook for a youth hostel.  The guests can post comments on the guestbook.  If a user wanted to post a comment, here's the process.
 
 User visits the site root.
 
-![](walkthrough/1-start.png)
+![](walkthrough/1-start.png)  
+
+***  
+
 
 User fills out and submits the form.
 
-![](walkthrough/2-populatedform.png)
+![](walkthrough/2-populatedform.png)  
 
-User is taken back to the guest comments page where the saved comment is displayed.
+***  
+
+
+User is taken back to the guestbook page where the saved comment is displayed.
 
 ![](walkthrough/3-submittedform.png)
 
