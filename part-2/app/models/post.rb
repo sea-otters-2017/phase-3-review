@@ -1,7 +1,7 @@
 class Post < ActiveRecord::Base
-  validates_presence_of :body, :title
+  validates_presence_of :body, :guest_name
 
-  def author_name=(name)
-    (!name.kind_of?(String) || name.empty?) ? super("anonymous") : super(name)
+  def hometown=(town)
+    (!town.kind_of?(String) || town.empty?) ? super("unknown") : super(town)
   end
 end

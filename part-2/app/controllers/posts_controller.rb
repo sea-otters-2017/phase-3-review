@@ -20,3 +20,9 @@ get "/posts/:id" do
   @post = Post.find(params[:id])
   erb :'posts/show'
 end
+
+put "/posts/:id/like" do
+  @post = Post.find(params[:id])
+  @post.increment!(:likes_count)
+  redirect "/posts/#{@post.id}"
+end

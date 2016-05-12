@@ -1,5 +1,9 @@
-<article class="post">
-  <h1><%= post.title %></h1>
-  <p class="post_details">Written by <%= post.author_name %> on <%= post.created_at.strftime("%m/%d/%Y") %></p>
-  <p class="post_body"><%= post.body %></p>
+<article class="comment">
+  <h3><%= post.guest_name %></h3>
+  <p class="comment_details">From <%= post.hometown %> wrote on <%= post.created_at.strftime("%m/%d/%Y") %> || <span class="like_count"><%= post.likes_count %></span> likes</p>
+  <p class="comment_body"><%= post.body %></p>
+  <form class="comment_like" action="/posts/<%= post.id %>/like" method="POST">
+    <input type="hidden" name="_method" value="PUT">
+    <input type="submit" class="comment_like_button" value="Like this comment">
+  </form>
 </article>

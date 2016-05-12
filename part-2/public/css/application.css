@@ -49,21 +49,21 @@ main {
 .content h1 {
 }
 
-.post {
+.comment {
   margin-bottom: 4em;
 }
 
-.post h1 {
+.comment h1 {
   font-size: 2em;
   margin: 0 0 .25em 0;
   color: black;
 }
 
-.post p {
+.comment p {
   margin: 0 0 1em 0;
 }
 
-.post_details {
+.comment_details {
   font-size: 80%;
   color: #999999;
 }
@@ -90,11 +90,11 @@ input[type=submit] {
   max-width: 400px;
   border: 1px solid #666666;
   background-color: white;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 input[type=submit]:hover {
-  background-color: blue;
+  background-color: DarkCyan;
   color: white;
 }
 

@@ -1,12 +1,12 @@
-<form id="post_form" action="/posts" method="post">
-  <label for="post[title]">Title:</label><br>
-  <input type="text" name="post[title]" value="<%= post.try(:title) %>"><br>
+<form id="comment_form" action="/posts" method="post">
+  <label for="post[guest_name]">Name:</label><br>
+  <input type="text" name="post[guest_name]" value="<%= post.try(:guest_name) %>"><br>
 
-  <label for="post[author_name]">Author Name:</label><br>
-  <input type="text" name="post[author_name]" value="<%= post.try(:name) %>"><br>
+  <label for="post[hometown]">My home town:</label><br>
+  <input type="text" name="post[hometown]" value="<%= post.try(:hometown) %>"><br>
 
-  <label for="post[body]">Body:</label><br>
+  <label for="post[body]">Comment:</label><br>
   <textarea name="post[body]"><%= post.try(:body) %></textarea><br>
 
-  <input type="submit" name="submit" value="Submit Post"><br>
+  <input type="submit" name="submit" value="Save your comment"><br>
 </form>
