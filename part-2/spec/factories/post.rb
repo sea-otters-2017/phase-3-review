@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :post do
-    title { "My Thoughts" }
-    author_name { "John Musing" }
+    guest_name { "My Thoughts" }
+    hometown { "Philadelphia" }
     body { Faker::Lorem.paragraph(5) }
   end
 end
