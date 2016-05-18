@@ -10,17 +10,9 @@ ENV['RACK_ENV'] ||= 'test'
 require File.expand_path("../../config/environment", __FILE__)
 require 'shoulda-matchers'
 require 'rack/test'
-require 'capybara'
-require 'capybara/rspec'
-require 'capybara/poltergeist'
 require 'database_cleaner'
 require 'factory_girl'
 require 'faker'
-
-Capybara.register_driver :poltergeist do |app|
-  Capybara::Poltergeist::Driver.new(app, phantomjs_options: ['--ignore-ssl-errors=yes'])
-end
-Capybara.javascript_driver = :poltergeist
 
 path_to_factories = File.expand_path('../factories', __FILE__)
 Dir["#{path_to_factories}/*.rb"].each { |file| require file }
@@ -48,5 +40,3 @@ end
 def app
   Sinatra::Application
 end
-
-Capybara.app = app.new
