@@ -1,10 +1,14 @@
 # Part 2:  AJAX
 
 ## Summary
-In Part 2 we'll take a functioning Sinatra application and enhance the user experience by adding some AJAX calls.
+
+In Part 2 we'll take a functioning Sinatra application and enhance the user
+experience by adding some AJAX calls.
 
 ### User Stories
-**Current Site**.  The application is a simple site where users can write posts.  If a user wanted to write a post, here's the process.
+
+**Current Site**.  The application is a simple site where users can write
+posts.  If a user wanted to write a post, here's the process.
 
 1. User visits the site root.
 2. User clicks on the "Share Your Thoughts" link.
@@ -12,7 +16,9 @@ In Part 2 we'll take a functioning Sinatra application and enhance the user expe
 4. User fills out and submits the form.
 5. User is taken to a new page where the saved post is displayed.
 
-**Future Site**. Our enhancements will make it so the user never leaves the homepage.  All the requests will be AJAX requests, and we'll update the DOM based on the responses.
+**Future Site**. Our enhancements will make it so the user never leaves the
+homepage.  All the requests will be AJAX requests, and we'll update the DOM
+based on the responses.
 
 ## Releases
 
@@ -37,7 +43,8 @@ Starting out, things are pretty normal.
 
 ![](walkthrough/1-start.png)
 
-After clicking the "Share Your Thoughts" link, we should see the form (note: we don't have the header from the normal new post page).
+After clicking the "Share Your Thoughts" link, we should see the form (note: we
+don't have the header from the normal new post page).
 
 ![](walkthrough/2-populatedform.png)
 
