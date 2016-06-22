@@ -16,9 +16,12 @@ posts.  If a user wants to write a post, here's the process.
 4. User fills out and submits the form.
 5. User is taken to a new page where the saved post is displayed.
 
-**Future Site**. Our enhancements will make it so the user never leaves the
-homepage.  All the requests will be AJAX requests, and we'll update the DOM
-based on the responses.
+We recommend try this functionality out for yourself so that you can get a feel
+for what the current user experience is.
+
+**Future Site**. Our enhancements will change the experience so the user never
+leaves the homepage.  All the requests will be AJAX requests and we'll update
+the DOM based on the responses.
 
 ## Releases
 
