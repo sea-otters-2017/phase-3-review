@@ -7,8 +7,10 @@ experience by adding some AJAX calls.
 
 ### User Stories
 
-**Current Site**.  The application is a simple site where users can write
-posts.  If a user wants to write a post, here's the process.
+#### Current Site
+
+The application is a simple site where users can write posts.  If a user wants
+to write a post, here's the process.
 
 1. User visits the site root.
 2. User clicks on the "Share Your Thoughts" link.
@@ -19,7 +21,9 @@ posts.  If a user wants to write a post, here's the process.
 We recommend try this functionality out for yourself so that you can get a feel
 for what the current user experience is.
 
-**Future Site**. Our enhancements will change the experience so the user never
+#### Future Site
+
+Our enhancements will change the experience so the user never
 leaves the homepage.  All the requests will be AJAX requests and we'll update
 the DOM based on the responses.
 
