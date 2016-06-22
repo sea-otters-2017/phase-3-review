@@ -69,7 +69,7 @@ JavaScript in Chrome and then visit the [http://localhost:9393/posts](http://loc
 
 As a reminder, you can temporarily disable JavaScript by the following steps:
 
-1. Open dev tools (cmd + option + i)
+1. Open dev tools (&#8984; + option + i)
 1. Click the gear icon (red box below)
 1. Click the disable JavasCript option
 
