@@ -27,7 +27,7 @@ the DOM based on the responses.
 
 ### Release 0: AJAX
 
-Let's implement our AJAX enhancements. With AJAX added, the user story should be:
+Implement the AJAX enhancements. With AJAX added, the user story should be:
 
 1. User visits the site root.
 2. User clicks on the "Share Your Thoughts" link.
