@@ -8,7 +8,7 @@ experience by adding some AJAX calls.
 ### User Stories
 
 **Current Site**.  The application is a simple site where users can write
-posts.  If a user wanted to write a post, here's the process.
+posts.  If a user wants to write a post, here's the process.
 
 1. User visits the site root.
 2. User clicks on the "Share Your Thoughts" link.
