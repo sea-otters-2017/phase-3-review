@@ -7,6 +7,8 @@ experience by adding some AJAX calls.
 
 ### User Stories
 
+<a name="current_site">
+
 #### Current Site
 
 The application is a simple site where users can write posts.  If a user wants
@@ -58,3 +60,20 @@ don't have the header from the normal new post page).
 Once we submit, our form goes away but we should have the post shown on the page.
 
 ![](walkthrough/3-submittedform.png)
+
+### Release 1: Graceful Degradation
+
+When applying JavaScript, we should so so in a way that, when JavaScript is
+disabled, the basic functionality of the application still works. Try disabling
+JavaScript in Chrome and then visit the [http://localhost:9393/posts](http://localhost:9393/posts) again.
+
+As a reminder, you can temporarily disable JavaScript by the following steps:
+
+1. Open dev tools (cmd + option + i)
+1. Click the gear icon (red box below)
+1. Click the disable JavasCript option
+
+![](resources/devtoolpix.png)
+
+When you click "Share Your Thoughts" you should experience the workflow
+described in the "[Current Site][#current_site]."
