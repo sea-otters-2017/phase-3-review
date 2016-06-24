@@ -173,6 +173,21 @@ _Given_
 1. When the user clicks the delete button, the user profile page should reload and
    the item should no longer be visible.
 
+#### Apply Responsible Behavior Per User and Route
+
+Look back on the work you've done in this release. Use your best judgment (and
+be prepared to defend your choices!) about what level of security is
+appropriate and implement that in the code.
+
+Ask yourself:
+
+* Must a user be logged in to view all items?
+* Should an authenticated user be able to view another user's items?
+* Who should be able to delete or create an item? Can anyone? Must you be
+  logged in?
+
+Make the appropriate code changes to support a responsible set of interactions.
+
 ### Release 3: Bidding
 
 Up until now, the home page has largely just contained links to allow the user
