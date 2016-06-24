@@ -1,7 +1,6 @@
 # Part 2:  AJAX
 
 ## Summary
-
 In Part 2 we'll take a functioning Sinatra application and enhance the user
 experience by adding some AJAX calls.
 
@@ -28,6 +27,23 @@ for what the current user experience is.
 Our enhancements will change the experience so the user never
 leaves the homepage.  All the requests will be AJAX requests and we'll update
 the DOM based on the responses.
+
+### Design Principle: Graceful Degradation
+
+When applying JavaScript, we should so so in a way that, when JavaScript is
+disabled, the basic functionality of the application still works. Try disabling
+JavaScript in Chrome and then visit the [http://localhost:9393/posts](http://localhost:9393/posts) again.
+
+As a reminder, you can temporarily disable JavaScript by the following steps:
+
+1. Open dev tools (&#8984; + option + i)
+1. Click the gear icon (red box below)
+1. Click the disable Javasscript option
+
+![](resources/devtoolpix.png)
+
+When you click "Share Your Thoughts" you should experience the workflow
+described in the "[Current Site](#current_site)."
 
 ## Releases
 
@@ -61,19 +77,3 @@ Once we submit, our form goes away but we should have the post shown on the page
 
 ![](walkthrough/3-submittedform.png)
 
-### Release 1: Graceful Degradation
-
-When applying JavaScript, we should so so in a way that, when JavaScript is
-disabled, the basic functionality of the application still works. Try disabling
-JavaScript in Chrome and then visit the [http://localhost:9393/posts](http://localhost:9393/posts) again.
-
-As a reminder, you can temporarily disable JavaScript by the following steps:
-
-1. Open dev tools (&#8984; + option + i)
-1. Click the gear icon (red box below)
-1. Click the disable Javasscript option
-
-![](resources/devtoolpix.png)
-
-When you click "Share Your Thoughts" you should experience the workflow
-described in the "[Current Site][#current_site]."
