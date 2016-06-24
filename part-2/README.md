@@ -10,68 +10,70 @@ experience by adding some AJAX calls.
 
 #### Current Site
 
-The application is a simple guestbook for a youth hostel.  The guests can post comments on the guestbook.  If a user wanted to post a comment, here's the process.
+The application is a simple guestbook for a youth hostel.  The guests can post
+comments on the guestbook.  If a user wanted to post a comment, here's the
+process.
 
 User visits the site root.
 
-![](walkthrough/1-start.png)  
+![](walkthrough/1-start.png)
 
-***  
-
+***
 
 User fills out and submits the form.
 
-![](walkthrough/2-populatedform.png)  
+![](walkthrough/2-populatedform.png)
 
-***  
-
+***
 
 User is taken back to the guestbook page where the saved comment is displayed.
 
 ![](walkthrough/3-submittedform.png)
 
+<a name="future-site">
+
 #### Future Site
 
-Our enhancements will make it so the user never leaves the homepage.  All the requests will be AJAX requests, and we'll update the DOM based on the responses.  After the site is updated, here's what the user experience will be.
+Our enhancements will make it so the user never leaves the homepage.  All the
+requests will be AJAX requests, and we'll update the DOM based on the
+responses.  After the site is updated, here's what the user experience will be.
 
 User visits the site root.
 
 ![](walkthrough/2-populatedform.png)
 
-User fills out and submits the form. Details of the saved comment are added to the DOM (without refreshing).
+User fills out and submits the form. Details of the saved comment are added to
+the DOM (without refreshing).
 
 ![](walkthrough/4-liked.png)
 
 Note that the form is also reset to allow another comment.
 
 ##### Liking
-In addition to AJAXifying the site, you should add the ability for users to "like" a comment. This flow will again keep the user on the same page.
 
 1. User visits the site root.
 1. User clicks on a like button.
 1. The "like" count is incremented on the DOM.
 
-Our enhancements will change the experience so the user never
-leaves the homepage.  All the requests will be AJAX requests and we'll update
-the DOM based on the responses.
+### Release 0: AJAX Post Addition
 
-### Design Principle: Graceful Degradation
+Implement code to make the page function as described in
+[Future Site](#future-site) section.
+
+### Release 1: Add Liking
+
+Build on work work from Release 0 and add the capability to add a new post and
+then "Like" it. No refresh of the page should be required to make this
+possible.
+
+### Release 2: Graceful Degradation
 
 When applying JavaScript, we should so so in a way that, when JavaScript is
 disabled, the basic functionality of the application still works. Try disabling
-JavaScript in Chrome and then visit the [http://localhost:9393/posts](http://localhost:9393/posts) again.
-
-As a reminder, you can use the Chrome Developer Tools to temporarily disable JavaScript (Version 51.0.2704.106 shown):
-
-![](readme-assets/disable-javascript.gif)
-
-
-When you click "Share Your Thoughts" you should experience the workflow
-described in the "[Current Site](#current_site)."
-
-## Releases
-
-### Release 0: AJAX
+JavaScript in Chrome and then visit the [http://localhost:9393/](http://localhost:9393/)
+again.
 
 ## Conclusion
-Once all the tests have passed, you have completed Part 2 of the assessment. If you haven't done so already, commit your changes and move on to Part 3.
+
+Once all the tests have passed, you have completed Part 2 of the assessment. If
+you haven't done so already, commit your changes and move on to Part 3.
