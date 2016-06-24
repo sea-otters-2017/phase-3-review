@@ -71,7 +71,7 @@ As a reminder, you can temporarily disable JavaScript by the following steps:
 
 1. Open dev tools (&#8984; + option + i)
 1. Click the gear icon (red box below)
-1. Click the disable JavasCript option
+1. Click the disable Javasscript option
 
 ![](resources/devtoolpix.png)
 
