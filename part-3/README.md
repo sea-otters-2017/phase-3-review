@@ -51,8 +51,8 @@ in Phase 2.
 ### Release 0: User Registration
 
 Users will need to register for a new account. Create a link on the home page
-that will take them to a page where they can enter their desired username,
-email, and password. The username must be unique.
+that will take them to a page where they can enter their desired email,
+username, and password. The username must be unique.
 
 ![registration home](../part-3/mockups/register.png)
 
