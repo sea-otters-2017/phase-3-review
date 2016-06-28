@@ -34,13 +34,10 @@ When applying JavaScript, we should so so in a way that, when JavaScript is
 disabled, the basic functionality of the application still works. Try disabling
 JavaScript in Chrome and then visit the [http://localhost:9393/posts](http://localhost:9393/posts) again.
 
-As a reminder, you can temporarily disable JavaScript by the following steps:
+As a reminder, you can use the Chrome Developer Tools to temporarily disable JavaScript (Version 51.0.2704.106 shown):
 
-1. Open dev tools (&#8984; + option + i)
-1. Click the gear icon (red box below)
-1. Click the disable Javasscript option
+![](readme-assets/disable-javascript.gif)
 
-![](resources/devtoolpix.png)
 
 When you click "Share Your Thoughts" you should experience the workflow
 described in the "[Current Site](#current_site)."
