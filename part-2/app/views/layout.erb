@@ -10,17 +10,19 @@
 </head>
 <body>
 
-  <header class="float_wrapper">
-    <h2 class="left">Paradise Isle Hostel Guestbook</h2>
-    <p class="right"><a href="/">Home</a></p>
+  <header class="container header">
+    <h1 class="header-heading">Paradise Isle Hostel Guestbook</h1>
+    <nav>
+      <a href="/">Home</a>
+    </nav>
   </header>
 
-  <main class="float_wrapper">
+  <main class="container main">
     <%= yield %>
   </main>
 
-  <footer>
-    <p>Paradise Isle</p>
+  <footer class="container footer">
+    <span>Paradise Isle</span>
   </footer>
 
 </body>

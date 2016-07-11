@@ -1,11 +1,20 @@
-<section id="sidebar" class="sidebar">
-  <h4 id="new_comment_link" class="button_anchor">
-  	How was your stay?</h4>
-  <%= erb :'posts/_form', { layout: false, locals: { post: @post } } %>
-</section>
+<section id="comments" class="content">
+  <h1>
+    Our Guests Say ...
+  </h1>
 
-<section id="comments" class="left content">
   <% @posts.each do |post| %>
     <%= erb :'posts/_post', { layout: false, locals: {:post => post }} %>
   <% end %>
+</section>
+
+<section id="sidebar" class="sidebar">
+  <h1 class="sidebar-heading">
+    How was your stay?
+  </h1>
+  <p>
+    If you've stayed at the Paradise Isle Hostel, we'd love to here how much you loved your stay.
+  </p>
+
+  <%= erb :'posts/_form', { layout: false, locals: { post: @post } } %>
 </section>
