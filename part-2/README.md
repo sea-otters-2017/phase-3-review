@@ -35,7 +35,7 @@ Improve the experience of liking a post.  As seen in Figure 2, when clicking the
 
 
 ### Release 2: Graceful Degradation
-When we enhance a site with JavaScript, we want to preserve the functionality of our site for users without JavaScript.  So, if a user has disabled JavaScript, our site should retain its AJAX-less features.  Disabling JavaScript and ensure that the site works without it.
+When we enhance a site with JavaScript, we want to preserve the functionality of our site for users without JavaScript.  So, if a user has disabled JavaScript, our site should retain its AJAX-less features.  Disable JavaScript and ensure that the site works without it.
 
 
 ## Conclusion
