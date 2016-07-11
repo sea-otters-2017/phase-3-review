@@ -3,5 +3,6 @@
 
 <section id="comment_form_container" class="left content">
   <h4>How was your stay?</h4>
+  <%= erb :"posts/_errors", { layout: false, locals: { errors: @post.errors.values.flatten } } %>
   <%= erb :'posts/_form', { layout: false, locals: { post: @post } } %>
 </section>
