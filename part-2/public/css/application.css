@@ -96,6 +96,12 @@ body {
   margin-bottom: 2em;
 }
 
+.post-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
 .post {
   margin-bottom: 3em;
 }

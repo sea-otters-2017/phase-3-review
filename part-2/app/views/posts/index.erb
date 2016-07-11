@@ -3,9 +3,13 @@
     Our Guests Say ...
   </h1>
 
-  <% @posts.each do |post| %>
-    <%= erb :'posts/_post', { layout: false, locals: {:post => post }} %>
-  <% end %>
+  <ul id="post-list" class="post-list">
+    <% @posts.each do |post| %>
+      <li>
+        <%= erb :'posts/_post', { layout: false, locals: {:post => post }} %>
+      </li>
+    <% end %>
+  </ul>
 </section>
 
 <section id="sidebar" class="sidebar">
