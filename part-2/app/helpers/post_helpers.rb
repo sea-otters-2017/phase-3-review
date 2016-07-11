@@ -4,7 +4,7 @@ module PostHelpers
   end
 
   def post_tagline(post)
-  "Written by #{post.guest_name} from #{post.hometown} on #{post.created_at.strftime("%B %d, %Y")}."
+  "Written by #{post.guest_name} from #{ensure_hometown(post)} on #{post.created_at.strftime("%B %d, %Y")}."
   end
 
   def post_likes_count(post)
@@ -18,6 +18,10 @@ module PostHelpers
   private
   def communication_method
     %w[wrote said shared].sample
+  end
+
+  def ensure_hometown(post)
+    post.hometown.empty? ? "parts unknown" : post.hometown
   end
 end
 
