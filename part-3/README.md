@@ -2,22 +2,17 @@
 
 ## Summary
 
-In Part 3 of the assessment, we'll demonstrate our proficiency in building
-web-stack applications: user authentication, associations, validations,
-controllers, views, etc. Even a little bit of CSS.
+In Part 3 of the assessment, you'll build a web-stack application:  controllers, views, user authentication, database migrations, model validations, associations, etc.  Even a little bit of CSS.  This is an opportunity to demonstrate your proficiency in the core skills from Phase 2.
 
 
-### Site Overview
+### Completing Part 3
+Part 3 is the final part of the Phase 2 assessment.  If Parts 1 and 2 are finished, devote the rest of the day to completing as much of this application as possible.  The assessment might end before the entire application is built.  If time is running out and it looks like the app will not be completed, continue to work through the releases in order and make as much progress as you can.  Use your time wisely:  if you're stuck,  ask questions and get help.
+
+
+### Web Application Overview
 We'll be building a simplified version of a blind auction site—in a blind
 auction, bidders do not see how much other bidders have bid.  Users will be able to register with the site, list items for auction, bid on items, etc.  We'll build the site one feature at a time.  The requirements for each feature are described in more detail in the *Releases* section.
 
-
-### Completing the App
-
-Complete as much of this CRUD app as possible in the time allowed.  If time is
-running out and it looks like the app will not be completed, continue to work
-through the releases in order and complete as much as possible. Be sure to ask
-questions, if you find yourself stuck.
 
 ## Releases
 ### Pre-release:  Setup
