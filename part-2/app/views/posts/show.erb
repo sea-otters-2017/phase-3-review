@@ -1,7 +1,5 @@
-<section id="sidebar" class="sidebar right">
-</section>
+<section id="comment" class="content">
+  <h1><%= post_heading(@post) %></h1>
 
-<section id="post" class="left content">
-  <h1>The Post ...</h1>
   <%= erb :'posts/_post', { layout: false, locals: {:post => @post }} %>
 </section>

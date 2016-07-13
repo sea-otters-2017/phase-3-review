@@ -1,7 +1,4 @@
 class Post < ActiveRecord::Base
-  validates_presence_of :body, :title
-
-  def author_name=(name)
-    (!name.kind_of?(String) || name.empty?) ? super("anonymous") : super(name)
-  end
+  validates_presence_of :body, { message: "A comment is required." }
+  validates_presence_of :guest_name, { message: "A name is required." }
 end

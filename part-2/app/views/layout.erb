@@ -3,25 +3,26 @@
 <head>
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/application.css">
-
-  <script src="/js/application.js"></script>
   <script src="/js/jquery.js"></script>
+  <script src="/js/application.js"></script>
 
-  <title></title>
+  <title>Paradise Isle Hostel Guestbook</title>
 </head>
 <body>
 
-  <header class="float_wrapper">
-    <h1 class="left">Share Anything</h1>
-    <p class="right"><a href="/">home</a></p>
+  <header class="container header">
+    <h1 class="header-heading">Paradise Isle Hostel Guestbook</h1>
+    <nav>
+      <a href="/">Home</a>
+    </nav>
   </header>
 
-  <main class="float_wrapper">
+  <main class="container main">
     <%= yield %>
   </main>
 
-  <footer>
-    <p>Share Anything</p>
+  <footer class="container footer">
+    <span>Paradise Isle</span>
   </footer>
 
 </body>
