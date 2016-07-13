@@ -8,6 +8,8 @@ post "/posts" do
 
   if @post.save
     redirect "posts/#{@post.id}"
+  else
+    erb :"posts/new"
   end
 end
 

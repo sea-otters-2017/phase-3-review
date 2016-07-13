@@ -1,7 +1,4 @@
 class Post < ActiveRecord::Base
-  validates_presence_of :body, :guest_name
-
-  def hometown=(town)
-    (!town.kind_of?(String) || town.empty?) ? super("unknown") : super(town)
-  end
+  validates_presence_of :body, { message: "A comment is required." }
+  validates_presence_of :guest_name, { message: "A name is required." }
 end
