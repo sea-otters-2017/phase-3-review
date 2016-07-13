@@ -17,8 +17,9 @@ auction, bidders do not see how much other bidders have bid.  Users will be able
 ## Releases
 The releases describe features to build out in your web application.  Each release will describe what to build, not how to build it.  Apply best practices.  For example, the releases contain mockups of the application.  In the mockups, the URLs are omitted from the browser's address bar.  You should determine the appropriate path for each page based on the conventions / patterns you've learned in Phase 2.
 
-### Pre-release:  Setup
-We'll need to make sure that everything is set up before we begin working on the application.  From the command line, navigate to the `part-3` directory of the phase 2 assessment.  Once there, run ...
+
+### Pre-release: Setup
+Make sure that everything is set up before we begin working on the application: install any necessary gems and create the database.  From the command line, navigate to the `part-3` directory of the Phase 2 assessment.  Once there, run ...
 
 0. `$ bundle`
 0. `$ bundle exec rake db:create`
