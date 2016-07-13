@@ -31,7 +31,7 @@ Begin by updating how new posts are created.  When the form to create a new post
 
 Improve the experience of liking a post.  As seen in Figure 2, when clicking the button to like a post, the page should be updated to reflect the new like count.  The page should not refresh or redirect.
 
-*Note:*  This should work for posts that were added to the page after the initial page load.
+*Note:*  This should work for posts that were added to the page after the initial page load.  Without refreshing the page.
 
 
 ### Release 2: Graceful Degradation
