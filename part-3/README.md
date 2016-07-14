@@ -54,41 +54,26 @@ Now that the application supports users, let's create a page to show a user's pr
 *Figure 3*.  Logging in and visiting the profile page.
 
 
+### Release 3: List Items for Auction
+Add a feature to allow users to list items to put up for auction.  Use the profile page for managing a user's listed items.
+
+On the user profile page, add a link for listing a new item.  Clicking the link takes the user to a form.  The form should collect data like the item's name, the item's condition, and a description of the item.  It should also collect start and end times for the auction.
+
+When the form is submitted, if listing the item is unsuccessful, the user should see the form and the associated error messages.  If listing the item is successful, the user should be redirected to the profile page where the item is listed by name.  This is demonstrated in Figure 4.
+
+*Note*: To set start and end times for an auction, you'll be working with dates.  The HTML5 datetime input type can be tricky to use with ActiveRecord.  Consider using a text input and entering the times as strings formatted so that ActiveRecord can parse them: `YYYY-MM-DD` or `YYYY-MM-DD HH:MM:SS` (e.g., 2015-04-01 14:30:00).
+
+![listing an item animation](readme-assets/list-items.gif)  
+*Figure 4*.  Listing an item unsuccessfully and then successfully.
 
 
 
 
 
-### Release 3: CRUD'ing a Resorouce
 
-The user's profile page is where users are able to manage their listed items.
-We'll start off by giving them the ability to add an item and then work through
-the remaining CRUD actions.
 
-#### Creating Items
 
-_Given:_
-
-* The registered user is signed in:
-
-1. On the home page create a link to the user's profile page.
-1. When the user clicks on the profile link they should be taken to their profile page.
-
-![profile 1](../part-3/mockups/profile_1.png)
-
-1. Create a link on this page to add an item to the auction site. The item
-   should include things like a name and/or title, description, when the user
-   would like the auction to start and when it should stop.
-
-![add auction error](../part-3/mockups/add_auction_error.png)
-
-*Note*: When creating and or editing an item, you'll need to create forms that
-allow you to enter dates. The HTML5 datetime input type is tricky to use with
-ActiveRecord. Consider using something like `<input type="text"
-name="my-date">` in the markup. When filling in the field, use the `YYYY-MM-DD`
-or `YYYY-MM-DD HH:MM:SS` format (e.g. 2015-04-01 14:30:00).
-
-After submitting an item, the user should be back on their profile page.
+### Release 4: Other -RUD Items
 
 #### Reading Items
 
@@ -150,7 +135,7 @@ Ask yourself:
 
 Make the appropriate code changes to support a responsible set of interactions.
 
-### Release 4: Bidding
+### Release 5: Bidding
 
 Up until now, the home page has largely just contained links to allow the user
 to register or login, or if they were logged in, to logout. Now that users have
@@ -207,7 +192,7 @@ their respective pages.
 
 ![place bids](../part-3/mockups/bid_on_item_logged_out.png)
 
-### Release 5: Bid on Items on the Profile Page
+### Release 6: Bid on Items on the Profile Page
 
 Now that we can bid on items, let's make it easy to keep track of the things we
 have bid on.
