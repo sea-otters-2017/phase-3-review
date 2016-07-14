@@ -26,22 +26,15 @@ Make sure that everything is set up before we begin working on the application: 
 
 
 ### Release 0: User Registration
+The first feature to build is user registration, which allows users to create new accounts.  What are best practices for user registration?  What routes do you need?  How can you keep user data safe?
 
-Users will need to register for a new account. Create a link on the home page
-that will take them to a page where they can enter their desired email,
-username, and password. The username must be unique.
+On the homepage, add a "register" link.  Clicking the link takes the user to a page with a form for creating a new account.  Users must register with an e-mail address, a username, and a password.  The e-mail address and username must be unique.
 
-![registration home](../part-3/mockups/register.png)
+If registration is unsuccessful, the user should see the registration form and the associated error messages.  If registration is successful, the user should be considered logged in and redirected to the homepage where the "register" link is replaced with the user's username.  This is demonstrated in Figure 1.
 
-If both constraints are met, the user should be considered logged in and
-redirected to the home page where all references to "Register" are removed.
+![registration mockup](readme-assets/registration.gif)  
+*Figure 1*. Registering unsuccessfully and then successfully.
 
-![registration home](../part-3/mockups/homepage_logged_in.png)
-
-If either constraint is not met, the user should see the registration form and
-the associated error messages.
-
-![registration home](../part-3/mockups/register_error.png)
 
 ### Release 1: Login/Logout
 
