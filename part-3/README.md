@@ -47,13 +47,19 @@ Clicking the "logout" link logs the user out and redirects the user back to the 
 *Figure 2*. Logging in unsuccessfully, logging in successfully, and logging out.
 
 
+### Release 2: User Profile Page
+Now that the application supports users, let's create a page to show a user's profile.  On the homepage, if a user is logged in, make the username a link.  Clicking the link takes the user to the profile page, which for now is a simple page welcoming the user.  This is demonstrated in Figure 3.
+
+![profile page animation](readme-assets/profile-page.gif)  
+*Figure 3*.  Logging in and visiting the profile page.
 
 
 
 
 
 
-### Release 2: CRUD'ing a Resorouce
+
+### Release 3: CRUD'ing a Resorouce
 
 The user's profile page is where users are able to manage their listed items.
 We'll start off by giving them the ability to add an item and then work through
@@ -144,7 +150,7 @@ Ask yourself:
 
 Make the appropriate code changes to support a responsible set of interactions.
 
-### Release 3: Bidding
+### Release 4: Bidding
 
 Up until now, the home page has largely just contained links to allow the user
 to register or login, or if they were logged in, to logout. Now that users have
@@ -201,7 +207,7 @@ their respective pages.
 
 ![place bids](../part-3/mockups/bid_on_item_logged_out.png)
 
-### Release 4: Bid on Items on the Profile Page
+### Release 5: Bid on Items on the Profile Page
 
 Now that we can bid on items, let's make it easy to keep track of the things we
 have bid on.
