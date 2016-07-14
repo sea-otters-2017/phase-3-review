@@ -37,35 +37,21 @@ If registration is unsuccessful, the user should see the registration form and t
 
 
 ### Release 1: Login/Logout
+Now that users can register, allow them to login and logout.  On the homepage, add a "login" link next to the "register" link.  Clicking the link takes the user to a page with a form for logging in.  Users sign in with an e-mail address and password.
 
-#### Login
+If login is unsuccessful, the user should see the login form and an error message.  If login is successful, the user should be considered logged in and redirected to the homepage where the "login" and "register" links are replaced with the user's username and a "logout" link.
 
-_Given:_
+Clicking the "logout" link logs the user out and redirects the user back to the homepage.  These behaviors are demonstrated in Figure 2.
 
-* There is a previously registered user
-* User is not currently logged in:
+![login/logout animation](readme-assets/login-logout.gif)  
+*Figure 2*. Logging in unsuccessfully, logging in successfully, and logging out.
 
-1. On the home page, create a link to login.
-1. When a user clicks on this link they should be taken to a page with a form to
-   enter their credentials.
 
-![login home](../part-3/mockups/login.png)
 
-1. If the credentials match, the user should be taken back to the homepage and the
-   login link should be replaced with a logout link.
 
-![login error](../part-3/mockups/login_error.png)
 
-1. If the credentials do not match, the user should see the login form and an
-   error message stating the credentials were not valid.
 
-#### Logout
 
-Given there is a previously registered user and they are currently logged in:
-
-1. On the home page, create a link to logout.
-1. When the user clicks on the logout link they should be taken to the home page
-   and the links "Register" and "Login" should both be visible.
 
 ### Release 2: CRUD'ing a Resorouce
 
