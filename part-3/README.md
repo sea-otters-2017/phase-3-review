@@ -78,13 +78,6 @@ If the update is unsuccessful, the user should see the form and the associated e
 *Figure 5*. Successfully editing an item.
 
 
-
-
-
-
-
-
-
 ### Release 5: Deleting Items
 #### Deleting Items
 
@@ -100,8 +93,13 @@ _Given_
 1. When the user clicks the delete button, the user profile page should reload and
    the item should no longer be visible.
 
-#### Apply Responsible Behavior Per User and Route
 
+
+
+
+
+
+### Release 6: Apply Responsible Behavior Per User and Route
 Look back on the work you've done in this release. Use your best judgment (and
 be prepared to defend your choices!) about what level of security is
 appropriate and implement that in the code.
@@ -116,7 +114,7 @@ Ask yourself:
 Make the appropriate code changes to support a responsible set of interactions.
 
 
-### Release 6: Reading Items
+### Release 7: Reading Items
 #### Reading Items
 
 _Given:_
@@ -131,7 +129,7 @@ _Given:_
 
 
 
-### Release 7: Bidding
+### Release 8: Bidding
 
 Up until now, the home page has largely just contained links to allow the user
 to register or login, or if they were logged in, to logout. Now that users have
@@ -188,7 +186,7 @@ their respective pages.
 
 ![place bids](../part-3/mockups/bid_on_item_logged_out.png)
 
-### Release 8: Bid on Items on the Profile Page
+### Release 9: Bid on Items on the Profile Page
 
 Now that we can bid on items, let's make it easy to keep track of the things we
 have bid on.
