@@ -89,23 +89,21 @@ On the profile page, add a "delete" button next to the "edit" link for each item
 *Figure 6*.  Deleting an item.
 
 
+### Release 6:  Appropriate Behaviors per User and Route
+Refine what you've done so far.  In particular, think about how we can provide a good, secure application for users.  Use your best judgement to make any appropriate code changes.  Be prepared to explain why your choices were appropriate.
+
+
+Consider:
+* Who can access the form to add an item?
+* Who can access the form to edit a specific item?
+* Who can edit a specific item?
+* Who can delete a specific item?
+* Who can view a specific user's profile?
 
 
 
 
-### Release 6: Apply Responsible Behavior Per User and Route
-Look back on the work you've done in this release. Use your best judgment (and
-be prepared to defend your choices!) about what level of security is
-appropriate and implement that in the code.
 
-Ask yourself:
-
-* Must a user be logged in to view all items?
-* Should an authenticated user be able to view another user's items?
-* Who should be able to delete or create an item? Can anyone? Must you be
-  logged in?
-
-Make the appropriate code changes to support a responsible set of interactions.
 
 
 ### Release 7: Reading Items
