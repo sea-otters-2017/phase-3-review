@@ -129,40 +129,15 @@ Consider:
 * Should bids be accepted before an auction starts or after it ends?
 
 
+### Release 10: Track Bids on the Profile Page
+It might be difficult for users to keep track of the auctions in which they've placed bids.  Add a feature for listing (1) the items currently up for auction on which a user has placed a bid and (2) completed auctions that the user has won.
+
+On the user profile page, add two sections:  one for current auctions in which the user has bid and one for completed auctions that the user has won.  In addition, make all names of items links to those items.  This is demonstrated in Figure 9.
+
+![profile page showing bid-in and won auctions](readme-assets/track-bids.gif)  
+*Figure 9*.  Profile page showing bin-in and won auctions with links to each item.
 
 
-
-### Release 10: Bid on Items on the Profile Page
-
-Now that we can bid on items, let's make it easy to keep track of the things we
-have bid on.
-
-#### Bid on Items
-
-_Given:_
-
-* The registered user is logged in
-* Registered user has previously placed bids on several items
-* User is currently on their profile page
-
-Create a section to display the items the user has bid on.
-
-![bid on items](../part-3/mockups/profile_3.png)
-
-
-#### Won Items
-
-_Given:_
-
-* The registered user is logged in
-* The registered user placed the highest bid on several items that are no longer active
-* The registered user is currently on their profile page
-
-Create a section to display the items they have won. This is items that are no
-longer active (end date is before today) and the bid placed on the item is the
-highest of all the bidders.
-
-![bid on items](../part-3/mockups/profile_4.png)
 
 ## Conclusion
 
