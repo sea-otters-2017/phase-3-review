@@ -119,25 +119,20 @@ On the page showing an item's details, add a bidding section.  Include the numbe
 *Figure 8*.  Bidding on an item unsuccessfully and then successfully.
 
 
-#### Login or Register to Bid
+### Release 9:  Refine Bidding
+In a previous release you controlled for who was able to create, update, and delete items.  Refine bidding in the same way.  Again, you'll need to make choices and be prepared to explain your reasoning.  Use your best judgement to make any appropriate code changes.
 
-_Given:_
-
-* The current user is not logged in
-* The user is on the item details page for a previously-created item
-
-In place of the bidding form, a user should see the text "To place a bid please login or register." Both login and register should be links taking the user to
-their respective pages.
-
-![place bids](../part-3/mockups/bid_on_item_logged_out.png)
+Consider:
+* Should everyone be allowed to bid or only logged in users?
+* Should users be allowed to bid on their own items?
+* Should users be allowed to edit or delete their bids?
+* Should bids be accepted before an auction starts or after it ends?
 
 
 
 
 
-
-
-### Release 9: Bid on Items on the Profile Page
+### Release 10: Bid on Items on the Profile Page
 
 Now that we can bid on items, let's make it easy to keep track of the things we
 have bid on.
