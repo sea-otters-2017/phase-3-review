@@ -79,20 +79,14 @@ If the update is unsuccessful, the user should see the form and the associated e
 
 
 ### Release 5: Deleting Items
-#### Deleting Items
+In the same way that users might need to edit an item, they might also need to delete an item.  Add a feature that allows users to delete items which they've previously listed.
 
-_Given_
+On the profile page, add a "delete" button next to the "edit" link for each item.  Clicking the button should delete the item and redirect the user back to the profile page.  This is demonstrated in Figure 6.
 
-* The registered user is signed in
-* There exist previously-created items; some owned by the logged-in user,
-  others not
+*Note:* The "delete" button is part of a form used to submit a RESTful request to delete an item.  In Figure 6, it is styled to look like a link.
 
-1. On the profile page, create a delete button associated to each of the items
-   the user has created. Just like in the update section, this button should only be
-   visible if the user logged in is the user that created the item.
-1. When the user clicks the delete button, the user profile page should reload and
-   the item should no longer be visible.
-
+![deleting an item](readme-assets/delete-item.gif)  
+*Figure 6*.  Deleting an item.
 
 
 
