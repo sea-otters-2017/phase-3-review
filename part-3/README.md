@@ -85,21 +85,7 @@ If the update is unsuccessful, the user should see the form and the associated e
 
 
 
-### Release 5: Other -R-D Items
-#### Reading Items
-
-_Given:_
-
-* The registered user is signed in
-* There exist previously-created items
-
-1. Create a section on the profile page to display all the items. This section
-   should _not_ include the long form description of the item.
-
-![add auction error](../part-3/mockups/profile_2.png)
-
-
-
+### Release 5: Deleting Items
 #### Deleting Items
 
 _Given_
@@ -129,7 +115,23 @@ Ask yourself:
 
 Make the appropriate code changes to support a responsible set of interactions.
 
-### Release 6: Bidding
+
+### Release 6: Reading Items
+#### Reading Items
+
+_Given:_
+
+* The registered user is signed in
+* There exist previously-created items
+
+1. Create a section on the profile page to display all the items. This section
+   should _not_ include the long form description of the item.
+
+![add auction error](../part-3/mockups/profile_2.png)
+
+
+
+### Release 7: Bidding
 
 Up until now, the home page has largely just contained links to allow the user
 to register or login, or if they were logged in, to logout. Now that users have
@@ -186,7 +188,7 @@ their respective pages.
 
 ![place bids](../part-3/mockups/bid_on_item_logged_out.png)
 
-### Release 7: Bid on Items on the Profile Page
+### Release 8: Bid on Items on the Profile Page
 
 Now that we can bid on items, let's make it easy to keep track of the things we
 have bid on.
