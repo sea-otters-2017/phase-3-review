@@ -110,37 +110,14 @@ On the homepage, list the name of each item that is currently up for auction.  T
 *Figure 7*.  Viewing an item's details.
 
 
-
-
-
-
-
-
 ### Release 8: Bidding
-#### Creating a Bid
+Add a feature that allows users to bid on items.  Bidding will occur on the page showing an item's details.  
 
-_Given_
+On the page showing an item's details, add a bidding section.  Include the number of bidders for the item and a form that accepts new bids.  When submitting the form, if the bid is unsuccessfully created, the user should see the item page with the form and the associated error messages.  If the bid is successfully created, the user should be redirected to the item's show page.  Instead of seeing a form for placing a new bid, the user should see the details of the bid.  This is demonstrated in Figure 8.
 
-* The registered user is signed in
-* There exist previously-created items; some owned by the logged-in user,
-  others not
-* There exist items which are active
+![bidding on an item](readme-assets/bid-on-item.gif)  
+*Figure 8*.  Bidding on an item unsuccessfully and then successfully.
 
-1. Make the name or title of the listed items in the home page a link. When the
-user clicks on a link for an item, they should be on a page that is displaying
-the details of the item. This will include the long form description and add a
-section on the page to display the current number of bidders.
-
-1. Add a form to the item detail page that will allow the user to enter a bid
-amount. The submit button for the form should say "Place Bid".
-
-![place bids](../part-3/mockups/bid_on_item.png)
-
-1. When the user submits the bidding form, the page should reload. Where the
-form was located, there should be the text, "Thank you for your bid. Good luck!"
-and the number of bidders section should be incremented by 1.
-
-![place bids](../part-3/mockups/bid_on_item_already_bid.png)
 
 #### Login or Register to Bid
 
@@ -153,6 +130,12 @@ In place of the bidding form, a user should see the text "To place a bid please 
 their respective pages.
 
 ![place bids](../part-3/mockups/bid_on_item_logged_out.png)
+
+
+
+
+
+
 
 ### Release 9: Bid on Items on the Profile Page
 
