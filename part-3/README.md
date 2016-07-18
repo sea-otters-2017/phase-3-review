@@ -101,46 +101,22 @@ Consider:
 * Who can view a specific user's profile?
 
 
+### Release 7: Browsing Items
+It's time to let users browse the items on our site.  Add a feature that lists the names of items that are currently up for auction and allows users to view a specific item's details.  Only list items for which the auction has started but not finished.  In other words, if the auction hasn't started yet, don't list the item.  If the auction is over, don't list the item.
+
+On the homepage, list the name of each item that is currently up for auction.  The name should be a link.  Clicking the link should take the user to a page showing the details of that item auction.  Show the item's name, condition, and description along with when the auction ends.  This is demonstrated in Figure 7.
+
+![view an item's details](readme-assets/view-item.gif)  
+*Figure 7*.  Viewing an item's details.
 
 
 
 
 
-### Release 7: Reading Items
-#### Reading Items
-
-_Given:_
-
-* The registered user is signed in
-* There exist previously-created items
-
-1. Create a section on the profile page to display all the items. This section
-   should _not_ include the long form description of the item.
-
-![add auction error](../part-3/mockups/profile_2.png)
 
 
 
 ### Release 8: Bidding
-
-Up until now, the home page has largely just contained links to allow the user
-to register or login, or if they were logged in, to logout. Now that users have
-the ability to create items for others to bid on, let's start filling in the
-homepage.
-
-#### Viewing Active Items
-
-_Given_
-
-* The registered user is signed in
-* There exist previously-created items; some owned by the logged-in user,
-  others not
-* There exist items which are active
-
-Create a section on the home page to list the items that are currently
-available and active. To clarify, active means the items have start date on or
-before today and the end date is on or after today.
-
 #### Creating a Bid
 
 _Given_
