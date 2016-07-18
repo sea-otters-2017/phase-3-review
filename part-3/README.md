@@ -67,14 +67,25 @@ When the form is submitted, if listing the item is unsuccessful, the user should
 *Figure 4*.  Listing an item unsuccessfully and then successfully.
 
 
+### Release 4: Updating Items
+If a user lists an item, they might wish to later make changes to that item:  change the name, the description, etc.  Let's add a feature, allowing users to edit their items.
+
+On the profile page where a user's auctions are listed, create an "edit" link for each item.  Clicking the link takes the user to a form for editing the item.  The form should be populated with the item's current details.  Submitting the form makes a request to update the item.
+
+If the update is unsuccessful, the user should see the form and the associated error messages.  If updating the item is successful, the user should be redirected to the profile page.  The successful outcome is demonstrated in Figure 5.
+
+![editing an item](readme-assets/edit-item.gif)  
+*Figure 5*. Successfully editing an item.
 
 
 
 
 
 
-### Release 4: Other -RUD Items
 
+
+
+### Release 5: Other -R-D Items
 #### Reading Items
 
 _Given:_
@@ -87,24 +98,7 @@ _Given:_
 
 ![add auction error](../part-3/mockups/profile_2.png)
 
-#### Updating Items
 
-_Given:_
-
-* The registered user is signed in
-* There exist previously-created items; some owned by the logged-in user,
-  others not
-
-1. On the profile page, create an edit link associated to each of the items the
-   user has created. This link should only be visible if the user logged in is the
-   user that created the item. For example, if Eve is visiting Bob's profile, she
-   should not be able to edit Bob's items.
-1. When the user clicks the edit link associated to the item, they should be
-   taken to a page to edit that item's details. After submitting this information
-   the user should be taken back to their profile page and see the item's updates
-   should be reflected on the page.
-
-![add auction error](../part-3/mockups/edit_auction.png)
 
 #### Deleting Items
 
@@ -135,7 +129,7 @@ Ask yourself:
 
 Make the appropriate code changes to support a responsible set of interactions.
 
-### Release 5: Bidding
+### Release 6: Bidding
 
 Up until now, the home page has largely just contained links to allow the user
 to register or login, or if they were logged in, to logout. Now that users have
@@ -192,7 +186,7 @@ their respective pages.
 
 ![place bids](../part-3/mockups/bid_on_item_logged_out.png)
 
-### Release 6: Bid on Items on the Profile Page
+### Release 7: Bid on Items on the Profile Page
 
 Now that we can bid on items, let's make it easy to keep track of the things we
 have bid on.
