@@ -10,7 +10,7 @@ Part 3 is the final part of the Phase 2 assessment.  If Parts 1 and 2 are finish
 
 
 ### Web Application Overview
-We'll be building a simplified version of a blind auction site—in a blind
+We'll be building a simplified version of a blind auction site; in a blind
 auction, bidders do not see how much other bidders have bid.  Users will be able to register with the site, list items for auction, bid on items, etc.  We'll build the site one feature at a time.  The requirements for each feature are described in more detail in the *Releases* section.
 
 
