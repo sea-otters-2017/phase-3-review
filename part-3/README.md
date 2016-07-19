@@ -55,7 +55,7 @@ Now that the application supports users, let's create a page to show a user's pr
 
 
 ### Release 3: List Items for Auction
-Add a feature to allow users to list items available for auction.  Use the profile page for managing a user's listed items.
+Add a feature to allow users to list items available for auction.  Use the profile page for listing a user's items.
 
 On the user profile page, add a link for listing a new item.  Clicking the link takes the user to a form.  The form should collect data like the item's name, the item's condition, and a description of the item.  It should also collect start and end times for the auction.
 
