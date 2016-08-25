@@ -61,7 +61,7 @@ On the user profile page, add a link for listing a new item.  Clicking the link 
 
 When the form is submitted, if listing the item is unsuccessful (e.g., failing a validation), the user should see the form and the associated error messages.  If listing the item is successful, the user should be redirected to the profile page where the item is listed by name.  This is demonstrated in Figure 4.
 
-*Note*: To set start and end times for an auction, you'll be working with dates.  The HTML5 datetime input type can be tricky to use with ActiveRecord.  Consider using a text input and entering the times as strings formatted so that ActiveRecord can parse them: `YYYY-MM-DD` or `YYYY-MM-DD HH:MM:SS` (e.g., 2015-04-01 14:30:00).
+*Note*:  The times an auction starts and ends should be saved in datetime fields. Because the HTML5 datetime input type can be tricky to use with ActiveRecord, consider using a text input in your form. You can enter the times as strings that ActiveRecord can parse into dates: 2017-05-22 12:00 (i.e., YYYY-MM-DD HH:MM).
 
 ![listing an item animation](readme-assets/list-items.gif)  
 *Figure 4*.  Listing an item unsuccessfully and then successfully.
