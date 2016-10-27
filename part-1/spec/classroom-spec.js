@@ -3,13 +3,11 @@ describe("Classroom", function() {
 
   beforeEach(function() {
     // Define student objects
-    jalil = new Student("Jalil", [100, 100]);
+    jalil  = new Student({firstName: "Jalil", scores: [100, 100]});
+    irene  = new Student({firstName: "Irene", scores: [95, 95]});
+    kelvin = new Student({firstName: "Kelvin", scores: [94, 94]});
+    myra   = new Student({firstName: "Myra", scores: [70, 70]});
 
-    irene = new Student("Irene", [95, 95]);
-
-    kelvin = new Student("Kelvin", [94, 94]);
-
-    myra = new Student("Myra", [70, 70]);
     // Assign classroom
     classroom = new Classroom([jalil, irene, kelvin, myra]);
   });
