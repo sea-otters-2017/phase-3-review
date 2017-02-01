@@ -4,9 +4,12 @@ class LoginsController < ApplicationController
   end
 
   def create
-    if @user = User.authenticate(params[:username], params[:password])
+    p params
+    p @user = User.find_by(email: params[:login][:email])
+    p params[:login][:password_digest]
+    if @user && @user.authenticate(params[:login][:password])
       session[:current_user_id] = @user.id
-      redirect '/users/'+@user.id+'/show'
+      redirect user_path(@user.id)
     end
   end
 

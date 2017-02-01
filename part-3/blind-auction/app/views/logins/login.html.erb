@@ -1,4 +1,4 @@
-<%= form_for :login do |f| %>
+<%= form_for :login,  url: {action: "create"} do |f| %>
   <%= f.text_field :email, placeholder: "email" %></br>
   <%= f.password_field :password_digest, placeholder: "password" %></br>
   <%= f.submit %>
