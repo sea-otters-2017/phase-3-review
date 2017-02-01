@@ -1,0 +1,8 @@
+<%= form_for @auction do |f| %>
+  <%= f.text_field :name, placeholder: "name" %> </br>
+  <%= f.text_field :condition, placeholder: "condition" %></br>
+  <%= f.text_body  :description, placeholder: "description" %></br>
+  <%= f.time_field :start, placeholder: "start time" %> </br>
+  <%= f.time_field :end, placeholder: "end time" %> </br>
+  <%= f.submit %>
+<% end %>
