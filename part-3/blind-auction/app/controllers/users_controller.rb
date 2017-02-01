@@ -4,13 +4,17 @@ class UsersController < ApplicationController
     render '/users/new'
   end
 
+  def show
+    @user = User.find()
+  end
+
   def create
     @user = User.new(params)
       if @user.save
         session[:user_id] = @user_id
-        erb :index
+        render :index
       else
-        erb :'/users/new'
+        render :'/users/new'
       end
   end
 
