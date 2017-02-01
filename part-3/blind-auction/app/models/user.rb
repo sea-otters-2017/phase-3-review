@@ -3,7 +3,7 @@ require 'bcrypt'
 class User < ApplicationRecord
   include 'bcrypt'
 
-  has_many :items
+  # has_many :items
 
   validates :username, presence: true, uniqueness: true
   validates :email, :password_digest, presence: true
