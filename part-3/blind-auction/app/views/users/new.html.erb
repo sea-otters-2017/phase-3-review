@@ -1,3 +1,5 @@
+<nav><%=link_to 'Login', new_session_path %> </nav>
+
 <%= form_for [@user] do |f| %>
   <%= f.text_field :username, placeholder: "name" %> </br>
   <%= f.text_field :email, placeholder: "email" %></br>

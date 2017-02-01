@@ -1,0 +1,6 @@
+<div>
+  <% Auction.all.each do |article| %>
+      <p><%= link_to auction.item, user_auction_path(@user_id, auction) %></p>
+    <% end %>
+  <% end %>
+</div>
