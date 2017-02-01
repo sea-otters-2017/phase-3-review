@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :users, :auctions, :session
+  resources :users, :auctions, :logins
   resources :auctions do
     resources :bids
   end
