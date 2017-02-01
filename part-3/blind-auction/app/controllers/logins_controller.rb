@@ -6,7 +6,7 @@ class LoginsController < ApplicationController
   def create
     if @user = User.authenticate(params[:username], params[:password])
       session[:current_user_id] = @user.id
-      redirect_to root_url
+      redirect '/users/'+@user.id+'/show'
     end
   end
 
