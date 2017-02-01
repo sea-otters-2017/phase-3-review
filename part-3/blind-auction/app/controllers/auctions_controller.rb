@@ -1,6 +1,6 @@
-class AuctionsController < ActionController
+class AuctionsController < ApplicationController
   def index
-    @auctions.all
+    @auction = Auction.all
     render :index
   end
   def new
@@ -13,6 +13,12 @@ class AuctionsController < ActionController
   end
 
   def create
+    @auction = Auction.new(params)
+     if @user.save!
+        render :index
+      else
+        render :new
+      end
   end
 
   def destroy

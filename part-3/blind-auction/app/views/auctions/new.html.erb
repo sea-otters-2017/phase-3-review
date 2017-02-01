@@ -1,4 +1,4 @@
-<%= form_for [@user,@auction] do |f| %>
+<%= form_for @auction do |f| %>
   <%= f.text_field :name, placeholder: "name" %> </br>
   <%= f.text_field :condition, placeholder: "condition" %></br>
   <%= f.text_body  :description, placeholder: "description" %></br>

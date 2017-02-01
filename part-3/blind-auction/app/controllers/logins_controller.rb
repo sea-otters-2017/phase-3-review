@@ -4,12 +4,15 @@ class LoginsController < ApplicationController
   end
 
   def create
+   @user = User.find_by(email: params[:login][:email])
     p params
-    p @user = User.find_by(email: params[:login][:email])
-    p params[:login][:password_digest]
     if @user && @user.authenticate(params[:login][:password])
       session[:current_user_id] = @user.id
-      redirect user_path(@user.id)
+      #It does find the thing right but it doesn't redirect like it should
+      #goal is to redirect to the show page where it welcomes by name
+      redirect_to user_path(@user.id)
+    else
+      redirect_to new_login_path
     end
   end
 
